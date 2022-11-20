@@ -9,12 +9,20 @@ body {
 }
 
 .header {
+  display: flex;
+  flex:auto;
+  align-content: center;
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
 }
 
+.header .user {
+  margin-left: auto;
+}
+
 .profile-image {
+  justify-content: flex-end;
   background: rebeccapurple;
   box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
   border-radius: 50%;
@@ -44,5 +52,17 @@ a {
 }
 
 ul {
+  padding:0px;
+  gap: 16px;
+  display: flex;
   list-style-type: none;
+}
+
+.user {
+  display:flex;
+  margin-left: auto;
+}
+
+.header, ul, a, button, .logo, .profile-image, .header, .user{
+  border: red solid 5px;
 }

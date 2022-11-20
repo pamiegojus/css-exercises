@@ -67,3 +67,7 @@ ul {
   align-items: center;
   gap: 16px;
 }
+
+.header, ul, .left, .right {
+  border: solid red 5px;
+}
